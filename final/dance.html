@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dance Page</title>
+    <link rel="stylesheet" href="css/style.css">
+    <script type="text/JavaScript" src="js/script.js"></script>
+    <script type="text/JavaScript" src="js/loadNavbar.js"></script>
+</head>
+<body>
+    <style>
+        .image-looks {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    justify-content: center;
+    margin-top: 2rem;
+    }
+
+    .image-looks img {
+    width: calc(33.333% - 1rem);
+    height: auto;
+    border-radius: 8px;
+    transition: transform 0.3s ease;
+    }
+
+    .image-looks img:hover {
+    transform: scale(1.05);
+    }
+    </style>
+    <div id="navbar"></div>
+    <div class="container-content">
+        <h1>Dance Moves</h1>
+        <div class="blog-post">
+            <p>Since I dance Hip-Hop, I thought it would be cool to show some of my favorite moves!</p>
+            <h2>The Dougie</h2>
+            <div class="image-looks">
+            <img src="images/dougie.jpeg" alt="Dance Image 1">
+            </div>
+        </div>
+        <div class="blog-post">
+            <h2>Kick Ball Change</h2>
+            <div class="image-looks">
+            <img src="images/change.png" alt="Dance Image 2">
+            </div>
+        </div>
+        <div class="blog-post">
+            <h2>Baby Freeze</h2>
+            <div class="image-looks">
+            <img src="images/baby_freeze.jpg" alt="Dance Image 3">
+            </div>
+        </div>
+    </div>
+    <script src="js/loadNavbar.js"></script>
+</body>
+</html>

@@ -1,0 +1,170 @@
+
+/* Main general styling */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container {
+    width: 100%;
+    background-color: #f8f9fa;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Navigation Styling */
+.nav {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    padding: 1rem 0;
+}
+
+.nav li {
+    margin: 0 1rem;
+}
+
+
+.nav a {
+    text-decoration: none;
+    color: #333;
+    font-weight: 500;
+    font-size: 1.1rem;
+    transition: color 0.3s ease, transform 0.3s ease;
+}
+
+.nav a:hover {
+    color: #007bff;
+    transform: scale(1.1);
+}
+
+
+.nav a.active {
+    color: #fff; 
+    background-color: #007bff;
+    padding: 0.5rem 1rem;
+    border-radius: 4px;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.nav a.active:hover {
+    background-color: #0056b3;
+}
+
+@media (max-width: 768px) {
+    .nav {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .nav li {
+        margin: 0.5rem 0;
+    }
+}
+
+/* General page styling */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    background-color: #f0f2f5;
+}
+
+.container-content {
+    max-width: 800px;
+    margin: 2rem auto;
+    padding: 2rem;
+    background: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+}
+
+.contact-container {
+    height: 100%;
+    width: 100%;
+    background-image: url("../images/baby_blue.jpg");
+    padding: 8rem 0;
+}
+
+h1 {
+    color: #333;
+    margin-bottom: 1rem;
+}
+
+p {
+    margin-bottom: 1rem;
+    line-height: 1.8;
+    color: #555;
+}
+
+ul, ol {
+    margin-bottom: 1rem;
+    padding-left: 1.5rem;
+}
+
+a {
+    color: #007bff;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+a:hover {
+    color: #0056b3;
+}
+
+/* Image gallery */
+.image-gallery {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    justify-content: center;
+    margin-top: 2rem;
+}
+
+.image-gallery img {
+    width: calc(33.333% - 1rem);
+    height: auto;
+    border-radius: 8px;
+    transition: transform 0.3s ease;
+}
+
+.image-gallery img:hover {
+    transform: scale(1.05);
+}
+
+/* Blog styling for classes page */
+.blog-post {
+    margin-bottom: 2rem;
+}
+
+.blog-post h2 {
+    font-size: 1.5rem;
+    margin-bottom: 0.5rem;
+    color: #333;
+}
+
+.blog-post p {
+    color: #555;
+    line-height: 1.8;
+}
+
+.blog-post img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+}
+
+.hidden {
+    display: none;
+    opacity: 0;
+}
+
+
+#message {
+    color: #333;
+    font-size: 1.2em;
+    margin-top: 20px;
+}

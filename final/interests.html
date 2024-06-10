@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Interests Page</title>
+    <link rel="stylesheet" href="css/style.css">
+    <style>
+        .heart-button {
+  width: 50px;
+  height: 50px;
+  background-color: transparent;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  background-image: url('https://upload.wikimedia.org/wikipedia/commons/thumb/f/f1/Heart_coraz%C3%B3n.svg/640px-Heart_coraz%C3%B3n.svg.png'); /* You can use any heart icon or SVG */
+  background-size: cover;
+}
+    </style>
+</head>
+<body>
+    <div>
+    <button class="heart-button" onclick="document.getElementById('heart').innerHTML='Thank you for liking my website!'"></button>
+    <p id="heart"></p>
+    </div>
+
+    <script src="script.js"></script>
+
+    <div id="navbar"></div>
+    <div class="container-content">
+        <h1>My Interests</h1>
+        <h2 style="font-size: medium;">I really enjoy listening to music! Since I speak Spanish, I listen to both music in Spanish and music in English, sometimes even in French. Some of the kinds of music I listen to are:</h2>
+        <p></p>
+        <ul>
+            <li>Reggaeton</li>
+            <li>Pop</li>
+            <li>Hip-Hop</li>
+            <li>R&B</li>
+            <li>French Music</li>
+        </ul>
+        <p>Specifically, I love Ariana Grande and Bad Bunny. I have listened to Ariana Grande since the beginning of the pandemic and ever since, I have learned about her life and written essays about her.
+            I also listen to her music on a daily basis. When I started listening to her music, in 2020, she had just released an album called Positions and I waited for her to release a new album which
+            only happened this year when she released her best album yet(in my opinion), called Eternal Sunshine. Like a week after the release of the album, she released the music video of one of the songs
+            called We Can't Be Friends which was so good and now I am waiting for the release of her new music video to her song The Boy is Mine which I suspect will be amazing!! I also really like Bad Bunny,
+            especially since I went to his concert in March. I mostly listen to his music with my brother because he likes Bad Bunny a lot too. My favorite album from Bad Bunny is Un Verano Sin Ti and my favorite
+            song from Bad Bunny is in that album and it is called Callaita. Since I mentioned I listen to french music, I want to explain a little more about why. I have been on duolingo for the past two years and I have
+            a 550 day streak learning french. Also, last year I went to an overnight camp for two weeks where I learned a lot of french and that is also the place that got me into french music more.
+        </p>
+        <p> If you're interested in listening to Ariana Grande's new album you can use this link!</p>
+        <p><a href="https://www.youtube.com/playlist?list=PLxA687tYuMWjZgLV6PEbpitJCTnj_iCtP" target="_blank"
+            onclick="alert('Warning! You\'re leaving my website.')">Eternal Sunshine Album on Youtube</a></p>
+        <p>This is what her album cover looks like:</p>
+        <div class="image-gallery">
+        <img src="images/eternal_sunshine.png" alt="Ariana Grande">
+        </div>
+    </div>
+    <script src="js/loadNavbar.js"></script>
+</body>
+</html>
